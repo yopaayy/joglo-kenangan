@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* Navbar  */
@@ -168,13 +168,95 @@ body {
 }
 
 .about .row .about-img img {
-  width: 95%;
+  width: 100%;
 }
 
 .about .row .content {
-    flex: 1 1 15rem;
-    padding: 0 1rem;
+  flex: 1 1 35rem;
+  padding: 0 1rem;
 }
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menus {
+  padding: 8rem 1.4rem;
+}
+
+.menus h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menus h2 span {
+  color: var(--primary);
+}
+
+/* Menu Section */
+.menus h2 {
+  margin-bottom: 1rem;
+}
+
+.menus p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menus .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menus .row .menus-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menus .row .menus-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menus .row .menus-card .menus-card-title {
+margin: 1rem auto 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -231,6 +313,33 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menus p {
+   font-size: 1.2rem;
+  }
 }
 
 /* Mobile (ukuran layar kecil) */
@@ -272,4 +381,8 @@ body {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+
+  .menus p {
+    font-size: 1.2rem;
+   }
 }
